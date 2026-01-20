@@ -218,4 +218,4 @@ If you would like more practice using the command line, here are some resources:
 - Another Unix/Linux command cheat sheet: [https://files.fosswire.com/2007/08/fwunixref.pdfLinks to an external site.](https://files.fosswire.com/2007/08/fwunixref.pdf "(opens in a new window)")
 
 --------------------------------------------------------------
-Keeping track of commands 
+### Keeping track of commands 
