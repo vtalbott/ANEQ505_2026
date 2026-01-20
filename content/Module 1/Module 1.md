@@ -153,3 +153,69 @@ Now we will go over general commands to use on the command line. These will work
 
 These are some common commands that you should learn, as we will use them throughout the semester:
 ![[Pasted image 20260120100256.png]]
+
+Now let's explore. We have just logged into Alpine, so where are we? Let's use `pwd`, for "print working directory". The below is our first example of a code chunk, which are things that you should make sure you run along with me.
+
+`pwd`
+
+You should see an output that looks like /home/USER@colostate.edu. Remember the three different types of spaces (home, projects, scratch). We landed in the "home" space!
+
+Now let's navigate back to the root, sometimes also referred to as home. This is not the home space that we are in now, but the home that contains our home, projects, and scratch directory. If you are confused, refer above to the spaces diagram, and we are navigating into the "/" area. 
+
+`cd /`
+
+We did this using cd, or "change directory." Now let's list the contents of our new directory.
+
+`ls`
+
+There are a lot of directories here that we will never use, but if you look closely, you can see our home, projects, and scratch spaces. Let's move into the projects space and list the contents of that directory. 
+
+`cd projects`
+
+`ls`
+
+Whoa! There is a ton of usernames here. These are all of the project directories of people in Alpine. Let's navigate into our personal projects directory. This is a good opportunity to learn about tab complete. Type cd, the first few letters of your NetID, and then press tab for it to autocomplete, and then press enter.
+
+`cd USERNAME`
+
+`ls`
+
+What kind of folders do you have in your projects directory?
+
+Now let's move to the scratch directory. We can do this in one command, without having to go all the way back to "/". Then list the contents of that directory.
+
+`cd /scratch/alpine/USER@colostate.edu`
+
+`ls`
+
+This is a good time to talk about **relative vs absolute paths**.
+
+- An **absolute** path is the path directly from the root, as shown directly above.
+- A **relative** path is a path based on where you are now. For example, if I am in the "alpine" directory, the path to get to the scratch directory would be:
+    - ./USER@colostate.edu
+    - The "." at the beginning of the path simply means "here." So we are here, and going to there. 
+
+What if we want to know more about a specific command? Let's learn more about 'ls". We can do this using the "man" command.
+
+`man ls`
+
+Scroll through the page, and look at all of the extra arguments. You can also find the arguments we discussed during the "anatomy of a command" section.
+
+--------------------------------------------------------------
+### Quick Exercise
+Now that you are more familiar with the command line, you will do a small exercise on your own to see if you understand the navigation system. Use the Linux cheat sheet provided above to figure out how to do these steps if you aren't sure, and feel free to ask questions. 
+
+1. Navigate to your projects directory
+2. Create a new directory called "aneq505". 
+    - Make sure not to use spaces or weird characters. Spaces have other meanings in the command line, so if you need a space, use an underscore. 
+3. Navigate into your new directory.
+4. Make a new text file and type a note to yourself about what this class is.
+5. Name your text file and save it, then check in your aneq505 directory to make sure your text file and the text inside it is still there. 
+
+If you would like more practice using the command line, here are some resources:
+
+- A fun game for when you want to procrastinate but still be productive: [http://web.mit.edu/mprat/Public/web/Terminus/Web/main.htmlLinks to an external site.](http://web.mit.edu/mprat/Public/web/Terminus/Web/main.html "(opens in a new window)")
+- Another Unix/Linux command cheat sheet: [https://files.fosswire.com/2007/08/fwunixref.pdfLinks to an external site.](https://files.fosswire.com/2007/08/fwunixref.pdf "(opens in a new window)")
+
+--------------------------------------------------------------
+Keeping track of commands 
